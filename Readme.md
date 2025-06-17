@@ -1,6 +1,6 @@
-# 🇻🇳 VietTrafficAI
+# VNTrafficAI
 
-**VietTrafficAI** is an AI-powered computer vision system designed to detect traffic signs, classify vehicles, track movements, and automatically identify traffic law violations in real-time — optimized for Vietnamese road conditions.
+**VNTrafficAI** is an AI-powered computer vision system designed to detect traffic signs, classify vehicles, track movements, and automatically identify traffic law violations in real-time — optimized for Vietnamese road conditions.
 
 ---
 
