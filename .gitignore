@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.idea
+.vscode/
+
+.venv/
+env/
+venv/
+
+dataset/raw
+
+# Logs
+*.log
