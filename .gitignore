@@ -3,13 +3,10 @@
 env/
 venv/
 
-# Dataset
-dataset/raw/
-dataset/processed/
-dataset/classes/
+dataset/raw/*
 
-# Models
-models/
+!dataset/raw/.gitkeep
+
 
 # IDE/Editor
 __pycache__/
