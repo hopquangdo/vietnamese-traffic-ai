@@ -6,6 +6,7 @@ venv/
 # Dataset
 dataset/raw/
 dataset/processed/
+dataset/classes/
 
 # Models
 models/
