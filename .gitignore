@@ -1,14 +1,20 @@
-__pycache__/
-*.py[cod]
-.idea
-.vscode/
-
+# Virtual environment
 .venv/
 env/
 venv/
 
-models/
+# Dataset
 dataset/raw/
+dataset/processed/
+
+# Models
+models/
+
+# IDE/Editor
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
 
 # Logs
 *.log
