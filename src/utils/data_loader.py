@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def load_data(path="../../dataset/processed/dataset.npz", flatten=True):
+def load_data(path, flatten=True):
     data = np.load(path)
     X = data["X"]
     y = data["y"]

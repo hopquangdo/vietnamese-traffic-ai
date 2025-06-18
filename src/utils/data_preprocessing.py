@@ -16,21 +16,21 @@ def yolo_to_bbox(x_center, y_center, w, h, img_w, img_h):
 
 
 def process_raw_data(
-    input_images,
-    input_labels,
-    save_path="dataset_npz/data.npz",
-    img_size=(32, 32)
+        input,
+        save_path,
+        img_size=(32, 32)
 ):
     """
     Đọc ảnh gốc và nhãn YOLO, crop các object, resize về img_size,
     và lưu toàn bộ vào 1 file .npz
 
     Args:
-        input_images (str): thư mục chứa ảnh gốc (.jpg)
-        input_labels (str): thư mục chứa file .txt YOLO tương ứng
+        input (str): thư mục chứa dữ liệu
         save_path (str): đường dẫn lưu file .npz
         img_size (tuple): kích thước resize ảnh object
     """
+    input_images = f"{input}/images"
+    input_labels = f"{input}/labels"
     X, y = [], []
 
     for filename in os.listdir(input_images):
@@ -75,11 +75,10 @@ def process_raw_data(
     np.savez_compressed(save_path, X=X, y=y)
     print(f"[✓] Đã lưu {len(X)} ảnh object vào {save_path}")
 
-
+#
 # # Ví dụ sử dụng:
 # process_raw_data(
-#     input_images="../../dataset/raw/images",
-#     input_labels="../../dataset/raw/labels",
-#     save_path="../../dataset/processed/dataset.npz",
+#     input="../../dataset/raw/valid",
+#     save_path="../../dataset/processed/valid/dataset.npz",
 #     img_size=(32, 32)
 # )
