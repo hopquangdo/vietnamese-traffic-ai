@@ -4,10 +4,10 @@ env/
 venv/
 
 dataset/raw/*
-
-
 !dataset/raw/.gitkeep
 
+models/*
+!models/.gitkeep
 
 # IDE/Editor
 __pycache__/
