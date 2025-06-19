@@ -75,10 +75,10 @@ def process_raw_data(
     np.savez_compressed(save_path, X=X, y=y)
     print(f"[✓] Đã lưu {len(X)} ảnh object vào {save_path}")
 
-#
-# # Ví dụ sử dụng:
+
+# Ví dụ sử dụng:
 # process_raw_data(
-#     input="../../dataset/raw/valid",
-#     save_path="../../dataset/processed/valid/dataset.npz",
+#     input="../../../dataset/raw/valid",
+#     save_path="../../../dataset/processed/valid/dataset.npz",
 #     img_size=(32, 32)
 # )
