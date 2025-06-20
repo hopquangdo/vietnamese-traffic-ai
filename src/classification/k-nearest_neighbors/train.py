@@ -7,7 +7,7 @@ from src.classification.utils import load_data
 
 def train_knn(
         X_train, y_train,
-        model_output="../../../models/logistic_model.pkl"
+        model_output="../../../models/knn_model.pkl"
 ):
     knn = KNeighborsClassifier(n_neighbors=5)
     knn.fit(X_train, y_train)

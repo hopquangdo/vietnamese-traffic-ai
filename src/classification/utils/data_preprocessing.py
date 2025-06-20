@@ -67,7 +67,6 @@ def process_raw_data(
                 X.append(cropped_resized)
                 y.append(class_id)
 
-    # Chuyển thành mảng numpy
     X = np.array(X)
     y = np.array(y)
 
